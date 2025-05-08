@@ -1,0 +1,882 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: cornflowerblue;
+  min-height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #d6d9fd;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-weight: bold;
+  }
+  .signin-container {
+    margin-top: 50px;
+  }
+  #signin-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #291f1f;
+    margin-bottom: 30px;
+  }  
+  .header{
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+
+
+  /* Homepage styles */
+  /* Global Styles */
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2d3b4f;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+#head{
+    color: #fafafa;
+    margin-left: 50px;
+}
+/* Hero Section */
+.hero {
+    height: 400px;
+    background-image: url('C:\PARMENAS-HIGGS\Test\background.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+/* Featured Products */
+.featured-products {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: blanchedalmond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.featured-products h2 {   
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product p {
+    color: #555;
+    font-size: 16px;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.product button:hover {
+    background-color: #e68900;
+}
+
+/* About Section */
+.about {
+    background: linear-gradient(135deg, #1e1e2f, #29293d); /* sleek dark gamer theme */
+    padding: 80px 30px;
+    border-radius: 20px;
+    color: #f0f0f0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    background-image: url('https://images.unsplash.com/photo-1598550895500-54f19f6f458f'); /* gaming or toy background */
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* overlay for readability */
+    z-index: 1;
+  }
+
+  .about div {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .about h3.two {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ffffffcc;
+    padding: 0 10px;
+  }
+
+/* Footer */
+footer {
+    background-color: #2d3b4f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ff9900;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        margin-bottom: 20px;
+    }
+}
+
+/* App.css or global CSS file */
+.signup-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6') no-repeat center center;
+    background-size: cover;
+    min-height: 10vh;
+    padding: 50px;
+  }
+  
+  .signup-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    color: #ffffff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+
+.product-card {
+    background: #272626;
+    color  : #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    margin: 20px auto;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .product-title {
+    font-size: 1.5rem;
+    color: #cec9c9;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    color: #f8f6f6;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  .product-button {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .product-button:hover {
+    background: linear-gradient(135deg, #e52e71, #ff8a00);
+    transform: scale(1.05);
+  }
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Logo  */
+.logo {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 10px;
+  padding: 5px;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo h1 {
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #4ade80, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  animation: pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(6, 182, 212, 0.9);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #3b5b9a, #6a2e92, #4a4db1);
+  padding: 20px 40px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffde59; /* Retained orange line */
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: inherit; /* Remove the orange text color on hover */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
+
+/* Get Products  */
+.product-card-get {
+  background: #1e293b; /* dark navy */
+  color: #e0f2f1; /* light teal */
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); /* glowing blue outline */
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+  animation: glow-pulse 2.5s infinite alternate;
+}
+
+.product-card-get:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.9); /* stronger glow on hover */
+}
+
+/* Glow animation */
+@keyframes glow-pulse {
+  from {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+}
+
+.product-image-get {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product-title-get {
+  font-size: 1.5rem;
+  color: #a7f3d0;
+  margin-bottom: 10px;
+}
+
+.product-description-get {
+  color: #d1fae5;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.product-button-get {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.product-button-get:hover {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.6);
+}
+
+
+/* Getgames Background  */
+.getgames-background {
+  background: linear-gradient(270deg, #c7ccd6, #61dafb);
+  background-size: 1000% 1000%;
+  animation: backgroundShift 15s ease infinite;
+  min-height: 100vh;
+  padding: 40px 20px;
+  transition: background 1s ease;
+}
+
+/* Smooth gradient movement */
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* Make payment  */
+.card {
+  background-color: #0d1117; /* sleek black */
+  color: #e6edf3; /* light text */
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 0 18px 2px rgba(0, 51, 153, 0.6); /* dark blue glow */
+  font-family: "Poppins", sans-serif;
+  transition: box-shadow 0.4s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px 4px rgba(0, 51, 153, 0.8);
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #22c55e; /* soft vibrant green */
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1f3783; /* deep blue border */
+}
+
+.card h2 {
+  color: #60a5fa; /* soft blue */
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.card .form-control {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #1f2937;
+  color: #f3f4f6;
+  outline: none;
+}
+
+.card .form-control::placeholder {
+  color: #9ca3af;
+}
+
+.card .btn-dark {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #16a34a, #4ade80, #22c55e); /* green shades */
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .btn-dark:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(34, 197, 94, 0.4);
+}
+.payment {
+  background-color: #050c16; /* deep black */
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 4px rgba(0, 102, 255, 0.5); /* blue glow */
+  max-width: 600px;
+  margin: 50px auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.payment:hover {
+  box-shadow: 0 0 28px 6px rgba(0, 102, 255, 0.7);
+}
+
+/* Dropdown  */
+.nav-item {
+  position: relative;
+}
+
+.nav-item .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1e293b;
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown li a:hover {
+  background: #334155;
+}
+
+/* Products in store  */
+.store {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4ade80; /* soft green */
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #4ade80, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInZoom 1s ease-in-out;
+}
+
+/* Optional animation for zooming in */
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.store::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4ade80, #06b6d4);
+  border-radius: 4px;
+}
+
+/* SUb  */
+.sub{
+  background-color: #3b82f6;
+}
+
+/* Featured  */
+.featured{
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4ade80; /* soft green */
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #08130c, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInZoom 1s ease-in-out;
+  padding: 5px;
+}
+
+/* Makepayment background  */
+.makepayment-background{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6') no-repeat center center;
+    background-size: cover;
+    min-height: 10vh;
+    padding: 50px;
+}
+
+
+/* Chatbot  */
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 360px;
+  max-height: 520px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+   font-family: "Segoe UI", sans-serif;
+  z-index: 9999;
+}
+
+.chat-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ff5c5c;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.chat-fab:hover {
+  transform: scale(1.1);
+  background: #e74c3c;
+}
+
+.chat-header {
+  background: #ff5c5c;
+  color: white;
+  padding: 16px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+.chat-msg {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 18px;
+
+}
+
+.chat-msg.bot {
+  background-color: #ececec;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+.chat-msg.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-input button {
+  background: #ff5c5c;
+  color: white;
+  padding: 0 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chat-input button:hover {
+  background: #e74c3c;
+}
+
+
+  
+  
+  
+
+
